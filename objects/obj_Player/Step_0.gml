@@ -26,8 +26,17 @@ getControls();
 		xspd = 0;
 		
 	}
+
+//Y movement
+	//grav
+	yspd += grav;
 	
+	
+	
+
+
 
 
 //MOVE
 x += xspd;
+y += yspd;
