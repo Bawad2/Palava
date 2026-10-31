@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UniversalFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UniversalFunctions",
+  "parent":{
+    "name":"Palava",
+    "path":"Palava.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
