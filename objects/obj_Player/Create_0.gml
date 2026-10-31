@@ -7,6 +7,11 @@ xspd = 0;
 yspd = 0;
 
 //jumping
-grav = .275
-termVel = 4;
-jspd = -3.15;
+grav = .775
+termVel = 14;
+jspd = -7.15;
+jumpMax = 2;
+jumpCount = 0;
+jumpHoldTimer = 0;
+jumpHoldFrames = 20;
+onGround = false;

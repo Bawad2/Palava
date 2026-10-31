@@ -8,7 +8,7 @@ function conSetup(){
 
 function getControls(){
 	//directional inputs
-	rightKey		= keyboard_check(vk_right) + keyboard_check(ord("D")) + gamepad_button_check( 0, gp_padr );
+	rightKey		= keyboard_check(vk_right) + keyboard_check(ord("D")) + gamepad_button_check( 0, gp_padr ) ;
 	rightKey		= clamp( rightKey, 0, 1);
 	leftKey			= keyboard_check(vk_left) + keyboard_check(ord("A")) +  gamepad_button_check( 0, gp_padl );
 	leftKey			= clamp( leftKey, 0, 1);

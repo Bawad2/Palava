@@ -1,6 +1,7 @@
 getControls();
 
 //X movement
+#region
 	//Direction
 	moveDir = rightKey - leftKey;
 
@@ -27,17 +28,48 @@ getControls();
 		
 	}
 
+#endregion
 //Y movement
+#region
 	//grav
 	yspd += grav;
 	
-	//Jump
-	if jumpKeyPressed and place_meeting( x, y + 1, obj_wall)
-	{
-		yspd = jspd;
+	//reset jump variables
+	if onGround { jumpCount = 0; } else { if jumpCount == 0 { jumpCount = 1; }  }
+	
+	
+	//initaite the Jump
+	if jkeybufferd and jumpCount < jumpMax
+	{	
+		//reset buffer
+		jkeybufferd = 0;
+		jkeybuffertimer = 0;
+		
+		//increse the number of jumps performed
+		jumpCount ++;
+		
+		
+		//jump
+		jumpHoldTimer = jumpHoldFrames;
 	}
 	
+	if !jumpKey { jumpHoldTimer = 0; }
+	
+	//jump if the holdtimer is running
+	if jumpHoldTimer > 0
+	{
+		yspd = jspd
+		jumpHoldTimer --;
+	} 
+	
+	
+	//quickfall
+	
+	if downKey { yspd += 1; }
+	
+	
 	//Y collison
+	if yspd > termVel {  yspd = termVel;}
 	
 	if place_meeting( x, y + yspd, obj_wall)
 	{
@@ -54,9 +86,12 @@ getControls();
 		
 	}
 	
+	//set if im on the ground
+	
+	if yspd >= 0 and place_meeting( x, y + 1, obj_wall) {  onGround = true} else{ onGround = false; }
 
 
-
+#endregion
 
 //MOVE
 x += xspd;
