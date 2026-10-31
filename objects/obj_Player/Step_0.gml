@@ -35,7 +35,7 @@ getControls();
 	yspd += grav;
 	
 	//reset jump variables
-	if onGround { jumpCount = 0; } else { if jumpCount == 0 { jumpCount = 1; }  }
+	if onGround { jumpCount = 0; jumpHoldTimer = 0; } else { if jumpCount == 0 { jumpCount = 1; }  }
 	
 	
 	//initaite the Jump
@@ -50,7 +50,7 @@ getControls();
 		
 		
 		//jump
-		jumpHoldTimer = jumpHoldFrames;
+		jumpHoldTimer = jumpHoldFrames[jumpCount - 1];
 	}
 	
 	if !jumpKey { jumpHoldTimer = 0; }
@@ -83,6 +83,7 @@ getControls();
 		}
 		
 		yspd = 0;
+		jumpHoldTimer = 0;
 		
 	}
 	

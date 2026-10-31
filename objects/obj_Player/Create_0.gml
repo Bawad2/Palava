@@ -13,5 +13,6 @@ jspd = -7.15;
 jumpMax = 2;
 jumpCount = 0;
 jumpHoldTimer = 0;
-jumpHoldFrames = 20;
+jumpHoldFrames[0] = 20;
+jumpHoldFrames[1] = 10;
 onGround = false;
