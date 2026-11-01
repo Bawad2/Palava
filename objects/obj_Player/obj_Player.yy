@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Player",
-    "path":"sprites/spr_Player/spr_Player.yy",
+    "name":"spr_PlayerWalk",
+    "path":"sprites/spr_PlayerWalk/spr_PlayerWalk.yy",
   },
   "spriteMaskId":null,
   "visible":true,
