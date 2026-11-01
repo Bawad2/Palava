@@ -34,7 +34,7 @@ yspd = 0;
 
 //jumping
 grav = .775
-termVel = 14;
+termVel = 50;
 jspd = -6.15;
 jumpMax = 2;
 jumpCount = 0;

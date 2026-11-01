@@ -1,3 +1,6 @@
+//MAKE THIS GUY LOOP
+move_wrap(true, true, 1)
+
 getControls();
 
 //X movement
@@ -119,9 +122,9 @@ getControls();
 
 //sprite updating
 
-if abs(xspd) > 0  { sprite_index = spr_PlayerWalk;  } else { sprite_index = spr_Playeridle;  };
-if abs(xspd) >= 5 { sprite_index = spr_PlayerRun; }
-if !onGround { sprite_index = spr_PlayerJump } 
+if abs(xspd) > 0  { sprite_index = sWalk;  } else { sprite_index = sIdle;  };
+if abs(xspd) >= moveSpd[1] { sprite_index = sRunning; }
+if !onGround { sprite_index = sJumping } 
 
 //set collisons
 	mask_index = MaskSprite;
