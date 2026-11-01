@@ -6,9 +6,13 @@ getControls();
 	moveDir = rightKey - leftKey;
 	//get face
 	if moveDir != 0 { face = moveDir}
+	//run if runkey
+	
+	if shiftkey { runtype = 1 } else { runtype = 0; }
+	
 	//get xspd
 	
-	xspd = moveDir * moveSpd;
+	xspd = moveDir * moveSpd[runtype];
 	
 	//X collisons
 	var _subPixel = .5;
@@ -115,7 +119,8 @@ getControls();
 
 //sprite updating
 
-if abs(xspd) > 0 { sprite_index = spr_PlayerWalk;  } else { sprite_index = spr_Playeridle;  };
+if abs(xspd) > 0  { sprite_index = spr_PlayerWalk;  } else { sprite_index = spr_Playeridle;  };
+if abs(xspd) >= 5 { sprite_index = spr_PlayerRun; }
 if !onGround { sprite_index = spr_PlayerJump } 
 
 //set collisons

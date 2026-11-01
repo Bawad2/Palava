@@ -26,7 +26,9 @@ sJumping = spr_PlayerJump;
 //movement
 face = 1;
 moveDir = 0;
-moveSpd = 5;
+runtype = 0;
+moveSpd[0] = 2;
+moveSpd[1] = 5;
 xspd = 0;
 yspd = 0;
 
