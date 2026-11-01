@@ -32,10 +32,25 @@ getControls();
 //Y movement
 #region
 	//grav
+	if CoyoteHangTimer > 0
+	{
+		CoyoteHangTimer --;
+	} else {
 	yspd += grav;
-	
+	setOnGround( false )
+	}
 	//reset jump variables
-	if onGround { jumpCount = 0; jumpHoldTimer = 0; } else { if jumpCount == 0 { jumpCount = 1; }  }
+	if onGround 
+	{
+		jumpCount = 0; 
+		jumpHoldTimer = 0;
+		CoyoteJumpTimer = CoyoteJumpFrames;
+	} else { 
+		
+		CoyoteJumpTimer--;
+		if jumpCount == 0 and CoyoteJumpTimer <= 0 { jumpCount = 1; }  
+		
+		}
 	
 	
 	//initaite the Jump
@@ -51,6 +66,9 @@ getControls();
 		
 		//jump
 		jumpHoldTimer = jumpHoldFrames[jumpCount - 1];
+		
+		//your ahh is not on the ground
+		setOnGround(false)
 	}
 	
 	if !jumpKey { jumpHoldTimer = 0; }
@@ -89,7 +107,7 @@ getControls();
 	
 	//set if im on the ground
 	
-	if yspd >= 0 and place_meeting( x, y + 1, obj_wall) {  onGround = true} else{ onGround = false; }
+	if yspd >= 0 and place_meeting( x, y + 1, obj_wall) { setOnGround() }
 
 
 #endregion
