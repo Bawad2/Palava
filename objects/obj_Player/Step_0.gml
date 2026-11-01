@@ -24,6 +24,11 @@ getControls();
 		//scoot up to the wall
 		var _pixelCheck = _subPixel * sign(xspd);
 		
+		if !place_meeting( x + xspd, y - abs(xspd)- 1, obj_wall)
+		{
+			while place_meeting( x + xspd, y , obj_wall) { y -= 1; }
+		}
+		
 		while !place_meeting( x + _pixelCheck, y, obj_wall)
 		{
 			x += _pixelCheck;	
@@ -35,6 +40,14 @@ getControls();
 		xspd = 0;
 		
 	}
+
+//go down slopes
+if yspd >= 0 and !place_meeting( x + xspd, y + 1, obj_wall) and place_meeting( x + xspd, y + abs(xspd) + 1, obj_wall)
+{
+	while !place_meeting( x + xspd, y + 1, obj_wall) { y += 1; }
+}
+
+
 
 #endregion
 //Y movement
