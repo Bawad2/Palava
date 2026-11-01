@@ -4,7 +4,8 @@ getControls();
 #region
 	//Direction
 	moveDir = rightKey - leftKey;
-
+	//get face
+	if moveDir != 0 { face = moveDir}
 	//get xspd
 	
 	xspd = moveDir * moveSpd;
@@ -111,6 +112,17 @@ getControls();
 
 
 #endregion
+
+//sprite updating
+
+if abs(xspd) > 0 { sprite_index = spr_PlayerWalk;  } else { sprite_index = spr_Playeridle;  };
+if !onGround { sprite_index = spr_PlayerJump } 
+
+//set collisons
+	mask_index = MaskSprite;
+
+
+
 
 //MOVE
 x += xspd;

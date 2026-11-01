@@ -16,7 +16,15 @@ function setOnGround( _val = true)
 
 conSetup();
 
+//spites
+MaskSprite = spr_Playeridle;
+sIdle = spr_Playeridle;
+sRunning = spr_PlayerRun;
+sWalk = spr_PlayerWalk;
+sJumping = spr_PlayerJump;
+
 //movement
+face = 1;
 moveDir = 0;
 moveSpd = 5;
 xspd = 0;
