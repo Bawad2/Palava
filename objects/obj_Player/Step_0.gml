@@ -21,24 +21,24 @@ getControls();
 	var _subPixel = .5;
 	if place_meeting( x + xspd, y, obj_wall)
 	{
+	
+		if !place_meeting( x + xspd, y - abs(xspd) - 2, obj_wall)
+		{
+			while place_meeting( x + xspd, y , obj_wall) {  y -= _subPixel; }
+		} 
+		//regular collison if no slop
+		
+		else
+		{
 		//scoot up to the wall
 		var _pixelCheck = _subPixel * sign(xspd);
 		
-		if !place_meeting( x + xspd, y - abs(xspd)- 1, obj_wall)
-		{
-			while place_meeting( x + xspd, y , obj_wall) { y -= 1; }
-		}
 		
-		while !place_meeting( x + _pixelCheck, y, obj_wall)
-		{
-			x += _pixelCheck;	
-		}
-		
-		
-		
+		while !place_meeting( x + _pixelCheck, y, obj_wall)  {	x += _pixelCheck;  }
+			
 		//STOP
 		xspd = 0;
-		
+		}
 	}
 
 //go down slopes
