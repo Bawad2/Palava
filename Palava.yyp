@@ -44,6 +44,7 @@
     {"id":{"name":"VariablesTracker","path":"scripts/VariablesTracker/VariablesTracker.yy",},},
     {"id":{"name":"spr_Coin","path":"sprites/spr_Coin/spr_Coin.yy",},},
     {"id":{"name":"spr_PlayerCrouch","path":"sprites/spr_PlayerCrouch/spr_PlayerCrouch.yy",},},
+    {"id":{"name":"spr_PlayerDash","path":"sprites/spr_PlayerDash/spr_PlayerDash.yy",},},
     {"id":{"name":"spr_Playeridle","path":"sprites/spr_Playeridle/spr_Playeridle.yy",},},
     {"id":{"name":"spr_PlayerJump","path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",},},
     {"id":{"name":"spr_PlayerRun","path":"sprites/spr_PlayerRun/spr_PlayerRun.yy",},},

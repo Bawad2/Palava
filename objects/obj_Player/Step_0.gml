@@ -12,12 +12,23 @@ if killButton { game_restart();}
 #region
 	//Direction
 	moveDir = rightKey - leftKey;
-	if moveDir == 0 and GPleftH != 0 { moveDir = 1 * sign(GPleftH); }
+	if moveDir == 0 { moveDir = GPleftH }
 	//get face
 	if moveDir != 0 { face = moveDir}
 	//run if runkey
+	//dash
 	
-	if shiftkey { runtype = 1 } else { runtype = 0; }
+	if keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb) { sprite_index = spr_PlayerDash }
+	if sprite_index == spr_PlayerDash
+	{
+	
+		if ev_animation_end { sprite_index = spr_PlayerRun; };
+		x += sprite_get_width(sprite_index) * face;
+		jumpCount = 0;
+		
+	}
+	//run when dash has ended
+	if shiftkey and sprite_index != spr_PlayerDash { runtype = 1 } else { runtype = 0; }
 	
 	//get xspd
 	
