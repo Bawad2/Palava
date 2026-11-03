@@ -22,14 +22,22 @@ getControls();
 	if place_meeting( x + xspd, y, obj_wall)
 	{
 	
-		if !place_meeting( x + xspd, y - abs(xspd) - 2, obj_wall)
+		if !place_meeting( x + xspd, y - abs(xspd) - 3, obj_wall)
 		{
 			while place_meeting( x + xspd, y , obj_wall) {  y -= _subPixel; }
 		} 
-		//regular collison if no slop
+		//regular collison if no slop but first celling
 		
 		else
 		{
+			//celling check
+			if !place_meeting(x + xspd, y + abs(yspd) + 2, obj_wall) 
+			{
+				while place_meeting( x + xspd, y , obj_wall) { y += 1; }
+			} 
+		//normal
+		else {
+			
 		//scoot up to the wall
 		var _pixelCheck = _subPixel * sign(xspd);
 		
@@ -38,6 +46,7 @@ getControls();
 			
 		//STOP
 		xspd = 0;
+			}
 		}
 	}
 
@@ -128,22 +137,21 @@ if yspd >= 0 and !place_meeting( x + xspd, y + 1, obj_wall) and place_meeting( x
 	
 	//set if im on the ground
 	
-	if yspd >= 0 and place_meeting( x, y + 1, obj_wall) { setOnGround() }
+	if yspd >= 0 and ( place_meeting( x, y + 1, obj_wall) or place_meeting( x + 2, y + 1, obj_wall) ) { setOnGround() }
 
 
 #endregion
 
 //sprite updating
 
+#region
 if abs(xspd) > 0  { sprite_index = sWalk;  } else { sprite_index = sIdle;  };
 if abs(xspd) >= moveSpd[1] { sprite_index = sRunning; }
 if !onGround { sprite_index = sJumping } 
 
 //set collisons
 	mask_index = MaskSprite;
-
-
-
+#endregion
 
 //MOVE
 x += xspd;

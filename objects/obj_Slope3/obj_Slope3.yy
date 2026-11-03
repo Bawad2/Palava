@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wallSloped",
-    "path":"sprites/spr_wallSloped/spr_wallSloped.yy",
+    "name":"spr_wallSloped3",
+    "path":"sprites/spr_wallSloped3/spr_wallSloped3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

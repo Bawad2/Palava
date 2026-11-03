@@ -1,0 +1,1 @@
+global.Coins = 0;

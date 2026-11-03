@@ -9,8 +9,8 @@
   "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"manager Objects",
+    "path":"folders/Objects/manager Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
