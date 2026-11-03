@@ -1,1 +1,1 @@
-draw_text( 120, 200, global.Coins)
+draw_text( 120, 200, GPleftH)

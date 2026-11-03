@@ -7,6 +7,9 @@ function conSetup(){
 }
 
 function getControls(){
+	//figure out right or left from controller axis inputs
+	GPleftH = gamepad_axis_value(0, gp_axislh);
+	GPleftV = gamepad_axis_value(0, gp_axislv);
 	//directional inputs
 	rightKey		= keyboard_check(vk_right) + keyboard_check(ord("D")) + gamepad_button_check( 0, gp_padr ) ;
 	rightKey		= clamp( rightKey, 0, 1);
@@ -16,7 +19,7 @@ function getControls(){
 	upKey			= clamp(upKey, 0, 1);
 	downKey			= keyboard_check(vk_down) + keyboard_check(ord("S")) + gamepad_button_check( 0, gp_padd );
 	downKey			= clamp( downKey, 0, 1);
-	shiftkey		= keyboard_check(vk_shift) +  gamepad_button_check( 0, gp_face3 );
+	shiftkey		= keyboard_check(vk_shift) +  gamepad_button_check( 0, gp_shoulderrb );
 	shiftkey		= clamp( shiftkey, 0, 1);
 	ctrl			= keyboard_check(vk_control);
 	//Action inputs

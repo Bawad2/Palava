@@ -42,6 +42,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"UniversalFunctions","path":"scripts/UniversalFunctions/UniversalFunctions.yy",},},
     {"id":{"name":"VariablesTracker","path":"scripts/VariablesTracker/VariablesTracker.yy",},},
+    {"id":{"name":"spr_Coin","path":"sprites/spr_Coin/spr_Coin.yy",},},
     {"id":{"name":"spr_PlayerCrouch","path":"sprites/spr_PlayerCrouch/spr_PlayerCrouch.yy",},},
     {"id":{"name":"spr_Playeridle","path":"sprites/spr_Playeridle/spr_Playeridle.yy",},},
     {"id":{"name":"spr_PlayerJump","path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",},},

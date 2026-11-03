@@ -1,12 +1,18 @@
+//initialization
+getControls()
+
+
 //MAKE THIS GUY LOOP
 move_wrap(true, true, 1)
 
-getControls();
+//restart button
+if killButton { game_restart();}
 
 //X movement
 #region
 	//Direction
 	moveDir = rightKey - leftKey;
+	if moveDir == 0 and GPleftH != 0 { moveDir = abs(GPleftH) * sign(GPleftH); }
 	//get face
 	if moveDir != 0 { face = moveDir}
 	//run if runkey
@@ -22,8 +28,9 @@ getControls();
 	if place_meeting( x + xspd, y, obj_wall)
 	{
 	
-		if !place_meeting( x + xspd, y - abs(xspd) - 3, obj_wall)
+		if !place_meeting( x + xspd, y - abs(xspd)*2 - 3, obj_wall)
 		{
+			setOnGround()
 			while place_meeting( x + xspd, y , obj_wall) {  y -= _subPixel; }
 		} 
 		//regular collison if no slop but first celling
