@@ -8,6 +8,7 @@ function conSetup(){
 
 function getControls(){
 	//figure out right or left from controller axis inputs
+	gamepad_set_axis_deadzone(0, 1)
 	GPleftH = gamepad_axis_value(0, gp_axislh);
 	GPleftV = gamepad_axis_value(0, gp_axislv);
 	//directional inputs

@@ -12,7 +12,7 @@ if killButton { game_restart();}
 #region
 	//Direction
 	moveDir = rightKey - leftKey;
-	if moveDir == 0 and GPleftH != 0 { moveDir = abs(GPleftH) * sign(GPleftH); }
+	if moveDir == 0 and GPleftH != 0 { moveDir = 1 * sign(GPleftH); }
 	//get face
 	if moveDir != 0 { face = moveDir}
 	//run if runkey
