@@ -18,21 +18,26 @@ if killButton { game_restart();}
 	//run if runkey
 	//dash
 	
-	if keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb) { sprite_index = spr_PlayerDash }
+	if ( keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) and !Dashing { sprite_index = spr_PlayerDash }
 	if sprite_index == spr_PlayerDash
 	{
-	
-		if ev_animation_end { sprite_index = spr_PlayerRun; };
-		x += sprite_get_width(sprite_index) * face;
-		jumpCount = 0;
+		Dashing = 1;
 		
+		if Dashing
+		{
+		if !place_meeting( x + 1 , y , obj_wall) and DashTimer <= sprite_width { x += 3* face ; DashTimer += 3; } else{ Dashing = 0; }
+		
+		} else { sprite_index = sRunning } 
+	
 	}
+
+	
 	//run when dash has ended
-	if shiftkey and sprite_index != spr_PlayerDash { runtype = 1 } else { runtype = 0; }
+	if shiftkey and !Dashing { runtype = 1; DashTimer = 0; } else { runtype = 0; }
 	
 	//get xspd
 	
-	xspd = moveDir * moveSpd[runtype];
+	xspd = moveDir * moveSpd[runtype]; 
 	
 	//X collisons
 	var _subPixel = .5;
@@ -163,10 +168,13 @@ if yspd >= 0 and !place_meeting( x + xspd, y + 1, obj_wall) and place_meeting( x
 //sprite updating
 
 #region
+
+if !Dashing
+{
 if abs(xspd) > 0  { sprite_index = sWalk;  } else { sprite_index = sIdle;  };
 if abs(xspd) >= moveSpd[1] { sprite_index = sRunning; }
 if !onGround { sprite_index = sJumping } 
-
+}
 //set collisons
 	mask_index = MaskSprite;
 #endregion

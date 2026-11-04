@@ -34,6 +34,12 @@ moveSpd[0] = 2;
 moveSpd[1] = 5;
 xspd = 0;
 yspd = 0;
+
+//Dash
+DashTimer = 0;
+Dashing = 0;
+
+
 #endregion
 
 //jumping
