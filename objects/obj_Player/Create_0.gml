@@ -39,7 +39,7 @@ yspd = 0;
 
 //Dash
 Dashed = 0;
-DashPwr = 30;
+DashPwr = 20;
 
 
 #endregion
@@ -72,16 +72,23 @@ Coins = global.Coins
 
 
 //Upgrades
+uprgadeDash = 0;
+uprgadeAirdash = 0;
+uprgadeDoubleJump = 0;
+upgradeCrouch = 0;
+upgradeGun = 0;
 
 
 
 //STATES
+previousState = stateFree();
+
 stateFree = function stateFree()
 {
 	getControls();
 	
 	//Change states
-	if keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb) { state = stateDash; }
+	if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) and onGround { state = stateDash; }
 	
 	
 	
@@ -249,9 +256,10 @@ y += yspd;
 }
 stateDash = function stateDash() 
 {
-//get face
-	//if moveDir != 0 { face = moveDir}
 
+if Dashed == 0 { sprite_index = spr_PlayerDashLaunch; state = stateAnimating(); previousState = stateDash(); }	
+	
+//get face
 xspd += 3*face
 Dashed += 3
 
@@ -296,6 +304,13 @@ Dashed += 3
 	x += xspd;
 	
 	if Dashed >= DashPwr { state = stateFree; Dashed = 0  }
+
+}
+statePlayingAnimation = function stateAnimating()
+{
+	sprite_set_speed( sprite_index, 20, fps)
+	if image_index >= image_number - 1 { state = previousState; }
+	
 
 }
 
