@@ -257,7 +257,7 @@ y += yspd;
 stateDash = function stateDash() 
 {
 
-if Dashed == 0 { sprite_index = spr_PlayerDashLaunch; state = stateAnimating(); previousState = stateDash(); }	
+if Dashed == 0 { sprite_index = spr_PlayerDashLaunch; state = stateAnimating; previousState = stateDash; }	
 	
 //get face
 xspd += 3*face
@@ -308,10 +308,9 @@ Dashed += 3
 }
 statePlayingAnimation = function stateAnimating()
 {
-	sprite_set_speed( sprite_index, 20, fps)
-	if image_index >= image_number - 1 { state = previousState; }
-	
-
+if (image_index >= image_number - sprite_get_speed(sprite_index) / game_get_speed(gamespeed_fps)) {
+    state = previousState;
+}
 }
 
 
