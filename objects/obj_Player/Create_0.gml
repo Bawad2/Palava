@@ -77,8 +77,8 @@ uprgadeAirdash = 0;
 uprgadeDoubleJump = 0;
 upgradeCrouch = 0;
 upgradeGun = 0;
-
-
+upgradeRolling = 0;
+upgradeCrouchWalking = 0;
 
 //STATES
 previousState = stateFree();
@@ -89,7 +89,7 @@ stateFree = function stateFree()
 	
 	//Change states
 	if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) and onGround { state = stateDash; }
-	if ctrl { state = stateCrouch;  previousState = stateFree;}
+	if ctrl { state = stateCrouch;  previousState = stateFree; if place_meeting( x + xspd, y, obj_wall) { x -= 3*face; } }
 	
 	
 	//X movement
@@ -314,6 +314,9 @@ stateCrouch = function stateCrouch()
 	
 	
 	if !ctrl and place_empty( x, y - sprite_width, obj_wall ) { state = previousState;  }
+
+//set collisons
+	mask_index = spr_PlayerCrouch;
 	
 	//Plan is to add rolling
 	//if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) and onGround { state = stateDash; }
@@ -333,7 +336,7 @@ stateCrouch = function stateCrouch()
 	
 	//X collisons
 	var _subPixel = .5;
-	if place_meeting( x + xspd, y, obj_wall)
+	if place_meeting( x + xspd, y , obj_wall) 
 	{
 		
 		//check for slopes
@@ -467,8 +470,7 @@ if yspd >= 0 and !place_meeting( x + xspd, y + 1, obj_wall) and place_meeting( x
 if abs(xspd) > 0  { sprite_index = spr_PlayerCrouch;  } else { sprite_index = spr_PlayerCrouch;  };
 if !onGround { sprite_index = sJumping } 
 
-//set collisons
-	mask_index = spr_PlayerCrouch;
+
 #endregion
 
 //MOVE
