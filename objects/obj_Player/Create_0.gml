@@ -16,6 +16,10 @@ function setOnGround( _val = true)
 
 conSetup();
 
+//Health stuff
+Hp = 10;
+
+
 
 
 //spites

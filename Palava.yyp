@@ -30,6 +30,7 @@
   },
   "name":"Palava",
   "resources":[
+    {"id":{"name":"obj_Bullet","path":"objects/obj_Bullet/obj_Bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_Coin","path":"objects/obj_Coin/obj_Coin.yy",},},
     {"id":{"name":"obj_GUI","path":"objects/obj_GUI/obj_GUI.yy",},},
@@ -42,6 +43,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"UniversalFunctions","path":"scripts/UniversalFunctions/UniversalFunctions.yy",},},
     {"id":{"name":"VariablesTracker","path":"scripts/VariablesTracker/VariablesTracker.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_Coin","path":"sprites/spr_Coin/spr_Coin.yy",},},
     {"id":{"name":"spr_PlayerCrouch","path":"sprites/spr_PlayerCrouch/spr_PlayerCrouch.yy",},},
     {"id":{"name":"spr_PlayerDashLand","path":"sprites/spr_PlayerDashLand/spr_PlayerDashLand.yy",},},
