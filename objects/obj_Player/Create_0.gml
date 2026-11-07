@@ -94,6 +94,8 @@ stateFree = function stateFree()
 	//Change states
 	if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) { if !uprgadeAirdash { if onGround { state = stateDash;} }else { state = stateDash; }  }
 	if ctrl { state = stateCrouch;  previousState = stateFree; if place_meeting( x + xspd, y, obj_wall) { x -= 3*face; } }
+	if keyboard_check_pressed(ord("X")) { state = stateAttack; }
+	
 	
 	
 	//X movement
@@ -534,6 +536,18 @@ if !onGround { sprite_index = sJumping }
 x += xspd;
 y += yspd;
 
+
+
+}
+stateAttack = function stateAttack()
+{
+
+sprite_index = spr_PlayerAttack1
+	
+var hitbox =	instance_create_layer( x + 3*face, y, self.layer, obj_HitBox)
+with(hitbox) { mask_index = spr_PlayerAttack1; }
+
+if !instance_exists(hitbox) or image_index >= image_number { state = stateFree; }
 
 
 }

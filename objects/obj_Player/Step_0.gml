@@ -8,7 +8,8 @@ move_wrap(true, true, 1)
 //restart button
 if killButton { game_restart();}
 
-
+//Hp
+//if Hp <= 0  { instance_destroy(); }
 
 
 

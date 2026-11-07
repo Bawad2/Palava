@@ -308,8 +308,15 @@ this is the typa shi you gotta use ai for jawad?
 
 IT WORKS AND IT WAS NOT 100 AI I FIGURED IT OUT MYSELF(11:54Am)
 
--fixed the bug that was happening to crouch(12:21Pm)
+- fixed the bug that was happening to crouch(12:21Pm)
 
+-its either a game over screen or attack now fo me to work on(12:32Pm)
+
+-HOW ABOUT BOTH
+
+Alr first of all I need to add a enemy that I can hurt and A seprate attacks sprite. Basically its gonna work like when you press a button your sprite changes to attack sprite and you summon a damaging hitbox that dmgs enemys when they touch the hitbox.
+
+yeah no i give up for now im gonna eat, take a shower and then study for a bit maybe come back after that(1:32Pm)
 
 
 

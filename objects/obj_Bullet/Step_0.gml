@@ -1,8 +1,8 @@
 
 
 //fly towards the player
-xspd += lengthdir_x( moveSpd, point_direction( x, y, obj_Player.x, obj_Player.y - 10 ) )
-yspd += lengthdir_y( moveSpd, point_direction( x, y, obj_Player.x, obj_Player.y - 10 ) )
+move_towards_point(  obj_Player.x, obj_Player.y - 10, moveSpd )
+
 
 
 
