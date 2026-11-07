@@ -74,7 +74,9 @@ CoyoteJumpTimer = 0;
 //Shop stuff
 Coins = global.Coins
 
-
+//attack
+ hitboxSpawned = 0
+ hitbox = noone;
 //Upgrades
 uprgadeDash = 0;
 uprgadeAirdash = 1;
@@ -541,13 +543,22 @@ y += yspd;
 }
 stateAttack = function stateAttack()
 {
-
-sprite_index = spr_PlayerAttack1
+	if sprite_index != spr_PlayerAttack1
+	{
+		sprite_index  = spr_PlayerAttack1;
+		hitbox = instance_create_layer( x + 3*face, y, self.layer, obj_HitBox)
+		with( hitbox) { mask_index = spr_PlayerAttack1 };
+		
+	} else { if !instance_exists(hitbox) { state = stateFree; hitboxSpawned = 0; } }
 	
-var hitbox =	instance_create_layer( x + 3*face, y, self.layer, obj_HitBox)
-with(hitbox) { mask_index = spr_PlayerAttack1; }
-
-if !instance_exists(hitbox) or image_index >= image_number { state = stateFree; }
+	/*	if !hitboxSpawned {hitbox = instance_create_layer( x + 3*face, y, self.layer, obj_HitBox) }
+	hitboxSpawned = 1;
+	with( hitbox) { mask_index = spr_PlayerAttack1 }
+		
+	
+	 if !instance_exists(hitbox) { state = stateFree; hitboxSpawned = 0; } 
+	*/
+	
 
 
 }
