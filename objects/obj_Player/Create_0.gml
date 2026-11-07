@@ -310,6 +310,59 @@ Dashed += 3
 	if Dashed >= DashPwr { state = stateFree; Dashed = 0  }
 
 }
+stateRoll = function stateRoll() 
+{
+
+ mask_index = spr_PlayerCrouch;
+if Dashed == 0 { sprite_index = spr_PlayerDashLaunch; state = stateAnimating; previousState = stateRoll; }	
+	
+//get face
+xspd += 3*face
+Dashed += 3
+
+
+//collisons
+//X collisons
+	var _subPixel = .5;
+	if place_meeting( x + xspd, y, obj_wall)
+	{
+		
+		//check for slopes
+		if !place_meeting( x + xspd, y - abs(xspd)*2 - 3, obj_wall)
+		{
+			setOnGround()
+			while place_meeting( x + xspd, y , obj_wall) {  y -= _subPixel; }
+		} 
+		//regular collison if no slop but first celling
+		
+		else
+		{
+			//celling check
+			if !place_meeting(x + xspd, y + abs(yspd) + 2, obj_wall) 
+			{
+				while place_meeting( x + xspd, y , obj_wall) { y += 1; }
+			} 
+		//normal
+		else {
+			
+		//scoot up to the wall
+		var _pixelCheck = _subPixel * sign(xspd);
+		
+		
+		while !place_meeting( x + _pixelCheck, y, obj_wall)  {	x += _pixelCheck;  }
+			
+		//STOP
+		xspd = 0;
+			}
+		} Dashed = DashPwr;
+	}
+	
+	
+	x += xspd;
+	
+	if Dashed >= DashPwr { state = stateFree; Dashed = 0  }
+
+}
 stateCrouch = function stateCrouch()
 {
 
@@ -323,7 +376,7 @@ stateCrouch = function stateCrouch()
 	mask_index = spr_PlayerCrouch;
 	
 	//Plan is to add rolling
-	//if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) and onGround { state = stateDash; }
+	if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) and onGround { state = stateRoll; }
 
 	//X movement
 #region

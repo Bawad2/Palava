@@ -1,0 +1,314 @@
+THE START 
+19th October, 2026
+
+I have a few ideas in my head rn.
+- Incrementa
+-rougelike
+-platformer
+
+kinda like that old flash game where get coins and die to upgrade your character.
+
+I gotta flesh out the game from here
+
+Day 1 ( 19/10/2026)
+Start( 8:38PM )
+- Started work on planning out exactly what I want for the game.
+  The idea is that by copying a game that already exists I dont   have to worry about the it being fun part cus i know it already is.
+ So the general idea is to copy that old games base and build upon  it.
+
+- Decided to look for a better storyboard app
+- Turns out the one i use rn is pretty good
+- Gonna look for some inspo
+- Finishied up planning the start( 9:18pm)
+ Im so definitely gonna get scope creep man
+- Im gonna think of a name
+
+		Painful salvation 
+		DEATH IS A FACT
+		how many times
+		Many times
+		daif
+		mullot
+		Palaiva
+		palava
+		Palava
+
+Palava it is
+
+- Found the name (9:27PM)
+-man im gonna start the main work tmrw(9:38PM)
+
+
+
+---------------------------------------------------DAY 2
+
+31st october, 2026
+
+I found a little time now. I got my physics test tmrw but i studyed well so im chill.
+
+im gonna prep the 2d platformer engine for the game now
+
+start(8:48PM)
+- started of by following the tutorail by peyton burnham
+- gonna make my github page for the game
+-went through 2 episods of the series
+
+end(10:16Pm)
+
+---------------------------------------------------DAY 3
+1st November, 2026
+
+Im so locked in. Plans are to finish the engine today
+
+got BGS exam the day after tmrw, physics went well i suppose
+
+start(4:34PM)
+- started watching and following
+- decided to make some place holder sprites myself instead using the one he provieds
+
+- undecided my decision 
+
+-somehow fell asleep woke up again at(7:05PM)
+yo gng you aint completing the engine today.
+-just realized l didnt capture a long ass amount of lapse :SOB:
+-im done for the day didnt finish the engine(11:19pm)\
+
+end 11:19pm
+
+---------------------------------------------------DAY 4
+
+wasted the whole day. Im gonna get a hella bad result in bgs tmrw
+
+go ahead with the engine is the goal
+
+start(7:19 pm)
+
+- watching tutu ryals
+
+-there seems to be slight prbl with my version of the game im gonna trobleshoot that first
+
+- yo i can NOT figure out ts.
+
+- Im gonna go on a bit of  detour and make it so i can zoom my screen.
+
+-I actually made it work (with a little help from AI {no code tho})
+
+- just spent the whole day de bugging bu bu bugging
+
+end(9:23Pm)
+
+
+---------------------------------------------------DAY 5
+IM HAVE TO FINISH THE ENGINE TODAY
+
+start(2:11Pm)
+-starting following ts.
+
+-YET AGAIN THere is bug in my version of the game
+
+-im gonna give up sooner or later on following the tutorial 
+- yeah i gave up on following the tutorail im gonna go my seperate way now(3:12Pm)
+
+- gonna work on making a pick up able coin object now(3 :17pm)
+
+- I was gonna make a spinning coin sprite but i gave up(3:28pm)
+
+-fuck AI im gonna do figure it out myself(3:44pm)
+
+- Used sine wave function to make the coin bob :D ( 3:51pm)
+
+- decided to boarden controller support(4:05pm)
+
+-im gonna add dashing to the game(4:39pm)
+
+-making the dash sprite(4:46pm)
+-made the sprite(4:54pm)
+- gonna start work on coding it in now
+- Garry vomited D:
+-im back(5:03)
+
+-dash buggy but works kinda(5:28PM)
+
+next exam bio gotta study
+end
+
+---------------------------------------------------DAY 6
+Finish dash, also start work on making the plan more broad
+4th November, 2026
+
+start(12:39Pm)
+- started work on dash()
+- basically when you press shift you sprite changes to dash sprite, when the dash sprite ends you jump to the spot where the sprite ended, rn whats happening is the dash animation isnt playing. Also as it is rn it just phases in side and outside walls.
+
+when you have reached the end of anmation your sprite changes and position as well
+
+
+im thinking I sould prolly do it all over differently
+
+-my cat genuinely slit my skin under my chin
+
+- HMMHMMMM the thing im tryna do really isnt working
+- i should really think it over
+
+lets see... when you first press the dash button Dashing will become true. When dashing is true your sprite becomes the dashing sprite and you add the x amount to your x. When the you reach the final x amount(the width of the sprite) set dashing to 0 and change back your sprite immediately 
+
+
+-yeah this aint good as well(2Pm)
+
+-alr i give up for now imma go take a shower
+
+
+hmmmmmm how bout 2 different sprites. One when the dash starts and one when the dash ends A launching sprite and a landing sprite
+
+- almost thought that i figured out how to make the first one work turns out i didnt
+yk what imma watch a tutorial 
+
+
+-the tutorial left me more confused then i already was
+
+---------------------------------------------------DAY 7
+Biology cooked my ahh
+
+5th, november 2026
+- I gotta finish dash today
+
+Start(11:05Pm)
+-gonna make a state machine
+
+yeah whatever im trying to do with dash is NOT working
+im gonna have to figure it out again(11:24PM)
+
+basically dashing addes a certain amout of pixels to your x every frame and stops adding to the x when collisions happen. Im gonna make it so dashing is a seperate state where xspd is added directly to the x instead of waiting for other stuff. Instead of there being a big xspd that is added instantly theres gonna be 2 variables DashPwr and Dashed. everyframe xspd is gonna increase and its gonna add to added itself to dashed. Dashpwr will be set variable when dashed becomes bigger then dashpwr dash ends, Dash also endes during a Collison.(plan is to added special animtion when you collide with a wall during a dash)
+
+alr imma test this one(11:47pm)
+
+im gonna fucking cry the state machine shit don work(11:58pm)
+
+- all of a cetain it just works(12:08am)
+
+- yo why it lwk working(12:11pm) 
+
+-i got distracted and decided to make the skill tree instead
+
+-undecided my decision (12:40AM)
+
+- gonna add sprites for dashing
+
+alr so for spites its gonna be sperate state of playing sprites so when that state running only sprites will play and nothing else(12:57am)
+
+-yo it lwk aint working(1 :03am)
+
+-it was because of the fuckass parenthesis(1;08am) my code and logic was perfect
+
+
+- ok im gonna work on fleshing out my plan even more(1:21am)
+
+- im gonna work on crouch next( 1:25 am)
+
+ok my brain no function no more
+i eep(1:32am) 
+
+---------------------------------------------------DAY 8
+start(2:32PM)
+
+crouch it is, also i gotta make running a separate state so i can make it more nice and polised
+
+-spent some time to figure out how huddle and playing music in huddles work(2:42PM)
+
+-started work on crouch
+
+-if you press crouch your sprite is set to crouch sprite and you hitbox also changes
+
+-alr basics of crouch work(2:58pm)
+
+gotta few bugs i gotta fix
+ 1. the crouch doesn't continue the movement if you keep on pressing on the movement key
+
+alr so i had a thought to make walking while crouching a separate upgrade and rolling to be unlocked before it
+
+ummm
+
+i cant figure it out(3:34pm)
+
+hmm the things that stop my xspd is only the collison code. Im gussing that the xspd being set to 0 is being carried over from the last state
+
+i cant freaking figure it out
+
+back to tutorail hell it is(3:50pm)
+or not
+IM GONNA FIGURE THIS OUT MYSELF(3:51PM)
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA(4:00Pm)
+
+
+
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+tutorail it is(4:12pm)
+
+
+took me a good 5secs into the tutorail to figure out where i fucked up(4:17pm)
+
+NOPE it was NOT THE THAT
+
+
+ok so the tutorail doesnt have my solution( 4:25 pm)
+
+alr im gonna give up on crouch now and start working on making airdash real
+
+airdash is real now(4:44pm)
+
+yeah i gotta study for HM now
+
+
+back in the same day kinda( 11:23PM )
+
+-Man I really gotta figure out what to do with crouch(11:23PM)
+also this is the first time garry ran out of the house at night man im gonna miss him so much. I already hate it. There has to be some thing to counter this line of my thought. Ik the only one that will be reading this is me, so i know what I mean to myself. Ill really really really hate it.
+
+
+-anyways started work on the crouch again( 11:25pm)
+
+-some stuff happend had to force garry into a shower( 12:01Pm)
+
+-Crouch works (12:15Pm)
+
+- alr now what
+
+ig im gonna work on a health and damage system 
+
+or maybe roll before that
+
+alr so the way hp is gonna work that theres gonna be a hp and everytime your hitbox touches a enemy anything you take damage done
+
+-alr bullets work(1:33AM)
+
+- Gonna GUI hp bar template for me to place the new sprite later(1:35Am)
+
+- alr it kinda works(2:11Am)
+
+---------------------------------------------------DAY 8
+8th, November 2026
+ig work on rolling today
+
+Start(11:18AM)
+- started work on rolling
+
+basiclly its just dashing but the sprite and hitbox is smaller
+
+-alr that was easy and now it works(11:30pm)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
