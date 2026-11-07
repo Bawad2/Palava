@@ -360,7 +360,7 @@ Dashed += 3
 	
 	x += xspd;
 	
-	if Dashed >= DashPwr { state = stateFree; Dashed = 0  }
+	if Dashed >= DashPwr { state = stateCrouch; Dashed = 0  }
 
 }
 stateCrouch = function stateCrouch()
@@ -370,7 +370,7 @@ stateCrouch = function stateCrouch()
 	
 	
 	
-	if !ctrl and place_empty( x, y - sprite_width, obj_wall ) { state = previousState;  }
+	if !ctrl and place_empty( x, y - sprite_width, obj_wall ) { state = stateFree;  }
 
 //set collisons
 	mask_index = spr_PlayerCrouch;

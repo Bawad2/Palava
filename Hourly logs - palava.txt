@@ -296,7 +296,7 @@ Start(11:18AM)
 
 basiclly its just dashing but the sprite and hitbox is smaller
 
--alr that was easy and now it works(11:30pm)
+-alr that was easy and now it works(11:30Am)
 
 
 -ok i need to fix the subImage thingy for the GUI health bar
@@ -306,7 +306,11 @@ well basically what i need is for the frame of the sprite to represent what perc
 this is the typa shi you gotta use ai for jawad?
 
 
-IT WORKS AND IT WAS NOT 100 AI I FIGURED IT OUT MYSELF(11:54Pm)
+IT WORKS AND IT WAS NOT 100 AI I FIGURED IT OUT MYSELF(11:54Am)
+
+-fixed the bug that was happening to crouch(12:21Pm)
+
+
 
 
 
