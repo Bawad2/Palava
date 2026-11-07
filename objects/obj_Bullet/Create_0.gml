@@ -1,4 +1,4 @@
-Dmg = 3;
+Dmg = 2;
 
 xspd = 0;
 yspd = 0;

@@ -299,6 +299,15 @@ basiclly its just dashing but the sprite and hitbox is smaller
 -alr that was easy and now it works(11:30pm)
 
 
+-ok i need to fix the subImage thingy for the GUI health bar
+
+well basically what i need is for the frame of the sprite to represent what percent of health i have left. 
+
+this is the typa shi you gotta use ai for jawad?
+
+
+IT WORKS AND IT WAS NOT 100 AI I FIGURED IT OUT MYSELF(11:54Pm)
+
 
 
 
