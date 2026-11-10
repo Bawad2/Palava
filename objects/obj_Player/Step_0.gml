@@ -9,7 +9,7 @@ move_wrap(true, true, 1)
 if killButton { game_restart();}
 
 //Hp
-//if Hp <= 0  { instance_destroy(); }
+if Hp <= 0  { state = stateDead;}
 
 
 

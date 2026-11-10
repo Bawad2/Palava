@@ -1,0 +1,24 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[
+    {"$GMRUILayer":"v1","%Name":"GameOverScreen","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"GameOverScreen","alignItems":2,"children":[
+            {"$GMRFlexPanel":"","%Name":"YouDied","alignItems":3,"children":[
+                {"$GMRTextItem":"v3","%Name":"text_2EF5B414","alignment":0,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"fontId":{"name":"Fnt_Pixel","path":"fonts/Fnt_Pixel/Fnt_Pixel.yy",},"frameH":0.0,"frameW":0.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_2EF5B414","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"text":"YOU DIED\r\n\r\n","wrap":false,"x":0.0,"y":0.0,},
+              ],"flexDirection":1,"height":{"unit":2,"value":17.01,},"justifyContent":2,"name":"YouDied","nodeColour":4282961650,"positionLeft":{"unit":1,"value":0.0,},"positionTop":{"unit":2,"value":6.94,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":89.36,},},
+            {"$GMRSpriteGraphic":"v1","%Name":"graphic_51195FF4","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_51195FF4","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_Panel","path":"sprites/spr_Panel/spr_Panel.yy",},"x":0.0,"y":0.0,},
+          ],"flexDirection":0,"height":{"unit":2,"value":83.33,},"justifyContent":0,"name":"GameOverScreen","nodeColour":4294108232,"paddingBottom":{"unit":1,"value":6.0,},"paddingLeft":{"unit":1,"value":6.0,},"paddingRight":{"unit":1,"value":6.0,},"paddingTop":{"unit":1,"value":6.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":31.25,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"GameOverScreen","nodeColour":4289939698,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"Palava",
+    "path":"Palava.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[],
+  "visible":true,
+}

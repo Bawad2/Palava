@@ -333,6 +333,56 @@ hmmmmmmmmmm.
 yeah imma go sleep and wake up early tmrw(11:27PM)
 
 
+---------------------------------------------------DAY 9
+8th november, 2026
+
+
+alr game over screen it is
+start(4:51PM)
+- I probably won't work for too long now cus kalke HM exam .
+
+- alr started work on the game over screen
+
+when your player dies it triggers a seprate state where you can upgrade your players abilitys. Also a "Game Over UI layer" pops up from which you can navigate to the upgrade menu or restart the game or the main menu. I should prolly just work on the main menu while Im working on this.
+The things im gonna need for this
+- menu bg sprite
+- button bg sprite( maybe custom sprite for each button one day)
+- Working button
+
+- Ok but i really dont have that much time now and I lwk want to select a pallette for my game now(4:57)
+
+-Decided the palette(5:22Pm)
+
+---------------------------------------------------DAY 10
+November 9th, 2026
+
+chem exam next the HM er karone mara khaisi ajke kothin
+
+anyways im gonna do what I put of yesterday watcht the tutorial and then make attack real wait no...
+
+Imma actually make the game over screen
+
+- Alr the game over screen actually look good
+just need to make it funtional now(3:40Pm)
+
+-The gameover screen turns on when you die now(3:50PM)
+
+my eyes genuinely hurt Im gonna get some sleep and yes it is PM now
+
+---------------------------------------------------DAY 11
+november 10th, 2026
+
+wasted the whole day kalke chem
+didnt study and didnt work
+worst shi ever
+
+alr this is jus gonna be a streak saver before class starts again in 10 min
+
+- jus gonna make a button sprite rq ig(11:12PM)
+- made the sprite(11:16Pm)
+-re worked on the panel sprite(11:20Pm)
+
+thas it for today ig
 
 
 

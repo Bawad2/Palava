@@ -562,6 +562,14 @@ stateAttack = function stateAttack()
 
 
 }
+stateDead = function stateDead()
+{
+	//turn on the gameover screen
+	layer_set_visible( "GameOverScreen" , true)
+	
+	//make the player invisible
+	image_alpha = 0;
+}
 statePlayingAnimation = function stateAnimating()
 {
 if (image_index >= image_number - sprite_get_speed(sprite_index) / game_get_speed(gamespeed_fps)) {
