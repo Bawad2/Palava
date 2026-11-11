@@ -97,7 +97,9 @@ stateFree = function stateFree()
 	if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderrb)) { if !uprgadeAirdash { if onGround { state = stateDash;} }else { state = stateDash; }  }
 	if ctrl { state = stateCrouch;  previousState = stateFree; if place_meeting( x + xspd, y, obj_wall) { x -= 3*face; } }
 	if keyboard_check_pressed(ord("X")) { state = stateAttack; }
-	
+
+//turn of the gameover screen if its still on
+if layer_get_visible("GameOverScreen") {  layer_set_visible( "GameOverScreen" , false );}
 	
 	
 	//X movement
@@ -569,6 +571,9 @@ stateDead = function stateDead()
 	
 	//make the player invisible
 	image_alpha = 0;
+	
+	//if hp back to max then go back to free state
+	if Hp >= HpMax { state = stateFree; }
 }
 statePlayingAnimation = function stateAnimating()
 {
