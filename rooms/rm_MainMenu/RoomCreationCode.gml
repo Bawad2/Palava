@@ -1,0 +1,1 @@
+if keyboard_key_press(vk_ralt) { room_goto_next()};
