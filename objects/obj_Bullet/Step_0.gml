@@ -3,7 +3,7 @@
 //fly towards the player
 move_towards_point(  obj_Player.x, obj_Player.y - 10, moveSpd )
 
-
+image_angle = point_direction( obj_Player.x, obj_Player.y, x, y )
 
 
 

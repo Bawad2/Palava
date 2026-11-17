@@ -573,7 +573,7 @@ stateDead = function stateDead()
 	image_alpha = 0;
 	
 	//if hp back to max then go back to free state
-	if Hp >= HpMax { state = stateFree; }
+	if Hp >= HpMax { state = stateFree; image_alpha  = 1; }
 }
 statePlayingAnimation = function stateAnimating()
 {
