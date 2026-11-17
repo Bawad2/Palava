@@ -440,6 +440,26 @@ im doing some pomo-doro shi and it really works
 
 - lunch break(1:45Pm)
 
+-back(2:18pm)
+
+-for some God know why reason my game thinks my Alt key is being pressed down every frame
+
+-alr it works(2:27Pm)
+
+-and i don no what I should do now. i really don wanna start working on attack now cus im on a pomo doro and shi and attacks gonna take a longer amount of uninterrupted focus.
+
+-HMMMMMMMMMMMMMMMM
+
+-Alr lemme prep the design document rq(2:29pm)
+not a GDD tho jus my thingy
+
+-OK im gonna make my idea for the skill tree menu stuff(2:37PM)
+
+basically the skill tree is gonna be a separate menu you can access from the game over screen. In this screen there is gonna be a bunch of different things you can choose. this UI layer will cover up the whole screen and when you choose a thing to inspect it will pop up a separate panel on the side that will show the button sprite with greater detail and also show a description for upgrade. You can then use your coins to buy the upgrade with the button located at the bottom of that UI menu(refer to milanote for the image)
+
+-alr so the idea is fine now i gotta figure out how to actually implement it(2:49Pm)
+
+ok so using a separate room would be easier for me to design  but i want to learn more so Im not gonna be doing that. So in the new UI Layer for the skill tree its gonna replace whatever menu is opened rn. In the skill tree you can see a fully sorted tree of the skills Im gonna make. Skill will be a seprate button obj that will have selected as a seperate variable. Selected text and selected HD_sprite will both be new objects that will detect the current selected skill and get its HD sprite and deatils text from inside it. The skill button will have a list for which skill it will be and what its description and HD sprite will be as being those skills. Use switch machine for this
 
 
 
