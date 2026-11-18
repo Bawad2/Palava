@@ -1,7 +1,6 @@
 //Things for the bigger display on the right
 skillDetail = " THIS IS JUST A MOCKUP "
 spriteHD = spr_SkillHD;
-skillIndex = "MOCKUP";
 sprite = spr_Skill;
 price = 1;
  

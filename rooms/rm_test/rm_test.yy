@@ -40,6 +40,7 @@
     {"name":"inst_1861B5D0","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_C42F4D5","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_79B184E0","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_2ED8C4EA","path":"rooms/rm_test/rm_test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -48,6 +49,9 @@
         {"$GMRInstance":"v4","%Name":"inst_1323769D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1323769D","objectId":{"name":"obj_Bullet","path":"objects/obj_Bullet/obj_Bullet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":406.0,"y":266.0,},
         {"$GMRInstance":"v4","%Name":"inst_594FBB09","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_594FBB09","objectId":{"name":"obj_Bullet","path":"objects/obj_Bullet/obj_Bullet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":410.0,"y":210.0,},
         {"$GMRInstance":"v4","%Name":"inst_DE2DD4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DE2DD4C","objectId":{"name":"obj_Bullet","path":"objects/obj_Bullet/obj_Bullet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":316.0,"y":230.0,},
+        {"$GMRInstance":"v4","%Name":"inst_2ED8C4EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2ED8C4EA","objectId":{"name":"obj_Skill","path":"objects/obj_Skill/obj_Skill.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Skill","path":"objects/obj_Skill/obj_Skill.yy",},"propertyId":{"name":"skillIndex","path":"objects/obj_Skill/obj_Skill.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"REDSKILL\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":64.0,},
       ],"layers":[],"name":"projectiles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemys","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_3E297339","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E297339","objectId":{"name":"Obj_Dummy","path":"objects/Obj_Dummy/Obj_Dummy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":225.0,"y":270.0,},
