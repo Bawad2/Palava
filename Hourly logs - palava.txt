@@ -477,6 +477,9 @@ Alr im gonna do what I planned out yesterday
 
 - Im gonna make the Ui layer for the details and the object to actually show them(1:45Pm)
 
+- finally got to the point where I test it and nothing works :D (2:16pm)
+
+- alr the sprite is showing up now but the text is'nt (2:22Pm)
 
 
 

@@ -83,6 +83,7 @@
     {"id":{"name":"spr_PlayerWalk","path":"sprites/spr_PlayerWalk/spr_PlayerWalk.yy",},},
     {"id":{"name":"spr_Skill","path":"sprites/spr_Skill/spr_Skill.yy",},},
     {"id":{"name":"spr_SkillHD","path":"sprites/spr_SkillHD/spr_SkillHD.yy",},},
+    {"id":{"name":"spr_SkillHD2","path":"sprites/spr_SkillHD2/spr_SkillHD2.yy",},},
     {"id":{"name":"spr_Title","path":"sprites/spr_Title/spr_Title.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_wallSloped","path":"sprites/spr_wallSloped/spr_wallSloped.yy",},},
