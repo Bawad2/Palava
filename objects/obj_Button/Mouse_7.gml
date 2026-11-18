@@ -19,7 +19,19 @@ switch (Button_ID)
 	 layer_set_visible("GameOverScreen", false ); 
 	 obj_Player.Hp = obj_Player.HpMax;
 	 show_debug_message("button works fine code shi")
+	break;
 	
+	
+	case 2 :
+	
+	if sprite_index != spr_BuyButton { sprite_index = spr_BuyButton; };
+	
+	if global.Coins >= global.selectedSkill
+	{
+		global.Coins -= global.selectedSkill.price;
+		array_push( global.CurrentSkills, global.selectedSkill.SkillName);
+		show_debug_message( string(global.CurrentSkills))
+	}
 	
 	break;
 	

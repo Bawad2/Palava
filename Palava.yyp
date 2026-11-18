@@ -70,6 +70,7 @@
     {"id":{"name":"PALLETE","path":"sprites/PALLETE/PALLETE.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_ButtonBG","path":"sprites/spr_ButtonBG/spr_ButtonBG.yy",},},
+    {"id":{"name":"spr_BuyButton","path":"sprites/spr_BuyButton/spr_BuyButton.yy",},},
     {"id":{"name":"spr_Coin","path":"sprites/spr_Coin/spr_Coin.yy",},},
     {"id":{"name":"spr_Panel","path":"sprites/spr_Panel/spr_Panel.yy",},},
     {"id":{"name":"spr_PlayerAttack1","path":"sprites/spr_PlayerAttack1/spr_PlayerAttack1.yy",},},

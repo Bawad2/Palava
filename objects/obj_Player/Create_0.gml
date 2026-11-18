@@ -78,13 +78,16 @@ Coins = global.Coins
  hitboxSpawned = 0
  hitbox = noone;
 //Upgrades
-uprgadeDash = 0;
+global.CurrentSkills[0] = "";
+
+
+/*uprgadeDash = 0;
 uprgadeAirdash = 1;
 uprgadeDoubleJump = 0;
 upgradeCrouch = 0;
 upgradeGun = 0;
 upgradeRolling = 0;
-upgradeCrouchWalking = 0;
+upgradeCrouchWalking = 0; */
 
 //STATES
 previousState = stateFree();

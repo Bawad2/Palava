@@ -1,5 +1,6 @@
 //Change details and sprite based on which skill you are
 global.selectedSkill = self;
+SkillName = skillIndex;
 
 switch( skillIndex)
 {
