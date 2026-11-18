@@ -462,5 +462,23 @@ basically the skill tree is gonna be a separate menu you can access from the gam
 ok so using a separate room would be easier for me to design  but i want to learn more so Im not gonna be doing that. So in the new UI Layer for the skill tree its gonna replace whatever menu is opened rn. In the skill tree you can see a fully sorted tree of the skills Im gonna make. Skill will be a seprate button obj that will have selected as a seperate variable. Selected text and selected HD_sprite will both be new objects that will detect the current selected skill and get its HD sprite and deatils text from inside it. The skill button will have a list for which skill it will be and what its description and HD sprite will be as being those skills. Use switch machine for this
 
 
+-Umm so kalke Bangla exam and I really am kinda sorta sleepy so goodnight 
+
+
+---------------------------------------------------DAY 14
+November 18th, 2026
+Exam phataiya disi bangla. Lets see if the result thinks the same
+
+Alr im gonna do what I planned out yesterday
+
+- Started making the skill object(1:21Pm)
+
+- well in theroy the object should work now(1:44Pm)
+
+- Im gonna make the Ui layer for the details and the object to actually show them(1:45Pm)
+
+
+
+
 
 
