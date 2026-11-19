@@ -516,3 +516,14 @@ alr so im just gonna finish what I started yesterday
 -decided to make the actual menu thats gonna turn on the details inspect menu(10:36Pm)
 
 - wait neva mind i need make a list for what sprites I need rn(10:43Pm)
+
+- gonna quickly make the itch page for this game()
+
+- alr finished that(10:53Pm)
+
+-ok so im gonna do what i was gonna do before(10:56Pm)
+
+basically it gonna work like when you press the button to open the shop your gonna get your screen filled with a new UI layer where all the skills are gonna be listed out and only when the layer is turned on the deatils are gonna be on screen as well.
+
+
+-alr so the skill menu actually turns on fr(11:55pm)

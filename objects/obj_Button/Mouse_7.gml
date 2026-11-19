@@ -30,8 +30,24 @@ switch (Button_ID)
 	{
 		global.Coins -= global.selectedSkill.price;
 		array_push( global.CurrentSkills, global.selectedSkill.SkillName);
-		show_debug_message( string( array_last(global.CurrentSkills) ));
+		
 	}
+	
+
+	
+	break;
+	
+	
+	case 3:
+	//quit button
+	layer_set_visible( self.layer, false)
+	
+	break;
+	
+	case 4:
+	//Go to skill shop button
+	layer_set_visible("SkillShop", true);
+	layer_set_visible("Details", true);
 	
 	break;
 	
