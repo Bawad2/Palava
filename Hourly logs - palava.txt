@@ -527,3 +527,7 @@ basically it gonna work like when you press the button to open the shop your gon
 
 
 -alr so the skill menu actually turns on fr(11:55pm)
+
+-alr fixed all the bugs i could find with it( 12:07am)
+
+-i should prolly make a devlog now( 12:08am)

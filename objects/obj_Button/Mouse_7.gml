@@ -40,7 +40,9 @@ switch (Button_ID)
 	
 	case 3:
 	//quit button
+	layer_set_visible("Details", false); 
 	layer_set_visible( self.layer, false)
+	
 	
 	break;
 	
