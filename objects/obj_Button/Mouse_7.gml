@@ -24,13 +24,13 @@ switch (Button_ID)
 	
 	case 2 :
 	
-	if sprite_index != spr_BuyButton { sprite_index = spr_BuyButton; };
-	
+
+	//buy skills
 	if global.Coins >= global.selectedSkill
 	{
 		global.Coins -= global.selectedSkill.price;
 		array_push( global.CurrentSkills, global.selectedSkill.SkillName);
-		show_debug_message( string(global.CurrentSkills))
+		show_debug_message( string( array_last(global.CurrentSkills) ));
 	}
 	
 	break;

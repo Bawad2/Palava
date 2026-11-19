@@ -11,6 +11,8 @@ if killButton { game_restart();}
 //Hp
 if Hp <= 0  { state = stateDead;}
 
+//Check for upgrades
+if array_contains( global.CurrentSkills, "CanDash") and !upgradeDash { upgradeDash = 1; }
 
 
 
